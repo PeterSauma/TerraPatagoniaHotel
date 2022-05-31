@@ -1,7 +1,7 @@
 {
-  "name": "pagina",
+  "name": "terrapatagonahotel",
   "version": "1.0.0",
-  "description": "",
+  "description": "En el centro de Malargüe al pie de la montaña, Terra Patagonia Hotel te dará una experiencia única de descanso donde la naturaleza y el confort se unen. Vivi la experiencia del descanso en nuestras habitaciones de lujo",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,17 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
-    "express": "^4.18.1",
+    "express": "^4.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterSauma/TerraPatagoniaHotel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PeterSauma/TerraPatagoniaHotel/issues"
+  },
+  "homepage": "https://github.com/PeterSauma/TerraPatagoniaHotel#readme",
+  "devDependencies": {
     "nodemon": "^2.0.16"
   }
 }

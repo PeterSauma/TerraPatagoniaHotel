@@ -12,9 +12,9 @@ const port = 3000
 
 
 // views
-app.use(express.static(path.join(__dirname,'views')))
+app.use(express.static(path.join(__dirname,'scr/views')))
 // public
-app.use(express.static(path.join(__dirname,'public')))
+app.use(express.static(path.join(__dirname,'scr/public')))
 
 //EJS
 app.set('view engine', 'ejs')
