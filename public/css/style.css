@@ -1,0 +1,105 @@
+/*se importa la tipografía Balthazar y Alegreya SC de google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Balthazar&display=swap');
+
+
+
+/*>>>BODY<<<*/
+.colorAzul{
+    color: rgb(60,79,100);
+}
+.colorVerde{
+    color: rgb(71, 112,108);
+}
+.colorBordo{
+    color: rgb(150, 111, 101);
+}
+
+* {
+    font-family: '', 'Balthazar', 'Alegreya';
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 12px;
+    margin: 0;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+h6{
+    font-size: 14px;
+}
+
+p{
+    font-size: 12px;
+}
+
+a {
+    color: rgb(60, 79, 100);
+}
+  
+
+/* MAIN - GENERAL */
+
+main{
+    background-color: rgb(255 255 255);
+    width: 100%;
+    margin: auto
+}
+
+
+
+
+
+/* sections */
+
+
+/* MAIN - HOME */
+
+/* carrusel */
+.slider{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  .slider ul{
+      display: flex;
+      animation: cambio 20s infinite alternate linear;
+      width: 400%;
+  }
+  .slider li{
+      width: 100%;
+      list-style: none;
+  }
+  .slider img{
+      width: 100%;
+      height: 100%;
+  }
+  @keyframes cambio{
+      0%{margin-left: 0;}
+      20%{margin-left: 0;}
+      
+      25%{margin-left: -100%;}
+      45%{margin-left: -100%;}
+      
+      50%{margin-left: -200%;}
+      70%{margin-left: -200%;}
+      
+      75%{margin-left: -300%;}
+      100%{margin-left: -300%;}
+  }
