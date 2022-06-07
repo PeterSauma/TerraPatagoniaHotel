@@ -20,9 +20,11 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
-const mainRouter = require('./routes/mainRoutes'); // Rutas main
+const mainRoutes = require('./routes/mainRoutes'); // Rutas main
+const habitacionesRoutes = require('./routes/habitacionesRoutes'); // Rutas habitaciones
 
-app.use('/', mainRouter);
+app.use('/', mainRoutes);
+app.use('/habitaciones', habitacionesRoutes);
 
 //montar el servidor                                                                                                                                                                                                                                                                                                                             
 app.listen(port, () => {
