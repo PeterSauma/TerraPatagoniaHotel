@@ -1,0 +1,100 @@
+<!DOCTYPE html> 
+<html> 
+
+<!-- HEAD -->
+<%- include('./partials/head') %>
+
+<body>
+    <!-- HEADER -->
+<%- include('./partials/header') %>
+
+<!-- MAIN -->
+<main>
+    <section class="carrusel">
+        <div class="static-photo">
+            <img src="/images/habitaciones/16.jpg" alt="1">
+        </div>
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="/images/habitaciones/16.jpg" alt="1">
+                </li>
+                <li>
+                    <img src="/images/general/22A.jpg" alt="2">
+                </li>
+                <li>
+                    <img src="/images/restaurant/09.jpg" alt="3">
+                </li>
+                <li>
+                    <img src="/images/general/25.jpg" alt="4">
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="welcome">
+        <div class="encabezado">
+            <h1>Terra Patagonia Hotel</h1>
+            <h3>Viví la experiencia con los 5 sentidos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iusto iste ipsam ut commodi, repellendus autem mollitia nulla aut inventore officia voluptates? Dolores maiores, fuga totam architecto rerum eligendi mollitia.</p>
+        </div>
+    </section>
+
+    <section class= "galeria">
+
+        <div class="habitaciones">  
+            <img class="img-galeria" src="/images/habitaciones/16.jpg" alt="imagen de pieza">
+            <a href="/habitaciones"><button class="btn-galeria"><strong class="colorGreen">Habitaciones</strong></button></a>
+        </div>
+        
+        <div class="restaurant">
+            <img class="img-galeria" src="/images/restaurant/08.jpg" alt="imagen restaurant">
+            <a href="/carta"><button class="btn-galeria"><strong class="colorGreen">Restaurant</strong></button></a>
+        </div>
+        
+        <div class="eventos">
+            <img class="img-galeria" src="/images/general/05Aret.jpg" alt="imagen eventos">
+            <a href="/socialmedia"><button class="btn-galeria"><strong class="colorGreen">Eventos</strong></button></a>
+        </div>
+    
+    </section>
+
+    <section class="info">
+
+        <div class="ubicacion">
+            <h2>Cómo llegar</h2>
+        </div>
+        <div class="ubicacion">
+            <h3 class="colorBronw">Dirección: Av Falsa 123</h3>
+        </div>
+        <div class="mapa">
+            <a href="https://goo.gl/maps/Fxhih4oHwriujXvW7" target="_blank"><img class="img-galeria" src="/images/general/map.PNG" alt="imagen eventos"></a>
+        </div>
+        
+    </section>
+    
+    <section class="serves">
+        <div>
+            <h2>Servicios</h2>
+        </div>
+        <article class="article-serves">
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-bell-concierge"></i><p class="colorBronw">Recepción 24 horas</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-mug-hot"></i><p class="colorBronw">Desayuno incluido</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-kitchen-set"></i><p class="colorBronw">Kitchenette</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-utensils"></i><p class="colorBronw">Servicio de restaurant</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-regular fa-credit-card"></i><p class="colorBronw">Todas las tarjetas</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-car-side"></i><p class="colorBronw">Cocheras privadas</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-suitcase-rolling"></i><p class="colorBronw">Taquillas guardaequipaje</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-wifi"></i><p class="colorBronw">Servicio de internet</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-tv"></i><p class="colorBronw">Television</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-wheelchair"></i><p class="colorBronw">Accesibilidad</p></div>
+            <div class="icon-serves"><i class="colorBronw fa-solid fa-water-ladder"></i><p class="colorBronw">Pileta</p></div>
+        </article>
+    </section>
+</main>
+
+    <!-- FOOTER -->
+<%- include('./partials/footer') %>
+
+</body>
+</html>

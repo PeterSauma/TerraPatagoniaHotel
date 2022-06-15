@@ -3,103 +3,456 @@
 
 
 
-/*>>>BODY<<<*/
-.colorAzul{
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BODY<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.colorBlue {
     color: rgb(60,79,100);
 }
-.colorVerde{
+.colorGreen {
     color: rgb(71, 112,108);
 }
-.colorBordo{
+.colorBronw {
     color: rgb(150, 111, 101);
 }
 
 * {
-    font-family: '', 'Balthazar', 'Alegreya';
+    font-family: 'Balthazar', 'Alegreya';
     padding: 0px;
     box-sizing: border-box;
+    color:  rgb(71, 112,108);;
+}
+button{
+    cursor: pointer;
 }
 
-body{
+body {
     font-size: 12px;
-    margin: 0;
+    margin: 0px;
 }
 
-h1{
+h1 {
     font-size: 30px;
 }
 
-h2{
+h2 {
     font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
 }
 
 h4 {
     font-size: 18px;
 }
 
-h5{
+h5 {
     font-size: 16px;
 }
 
-h6{
+h6 {
     font-size: 14px;
 }
 
-p{
-    font-size: 12px;
+p {
+    font-size: 20px;
 }
 
 a {
     color: rgb(60, 79, 100);
 }
-  
+i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+    
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/* MAIN - GENERAL */
+header {
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(245, 228, 180);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
-main{
-    background-color: rgb(255 255 255);
+
+
+.logo-mobile {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-mobile a img {
     width: 100%;
-    margin: auto
+}
+
+.logo-desktop {
+    display: none;
+}
+
+
+ /*burger-menu*/
+ 
+ .burger-menu{
+    flex-grow: 0;
+    text-align: left;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+
+    
+    }
+
+.background-burger{
+    width: 100%;
+    background-color: rgba(241, 253, 247, 0.6);
+    color: rgb(71, 112,108);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+
+
+.recerva-btn {
+    font-size: 24px;
+    width: 100px;
+    height: 45px;
+    text-decoration: none;
+    background-color: rgba(71, 112,108,0.4);
+    border-radius: 10px;
+    border: solid rgb(71, 112,108);
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.recerva-btn:hover {
+    color:white;
+    transform: scale(1.2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.recerva-btn a {
+    text-decoration: none; 
+}
+
+
+/* hover burger-menu*/
+
+.background-burger:hover{
+    background-color: rgb(60,79,100);
+    color: white;
+    transform: scale(1.1);
+    border-radius:25px ;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    
+}
+
+/*nav*/
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*MAIN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+main {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to bottom,  rgb(245, 228, 180), rgb(250, 250, 250));
+}
+
+
+/*sections*/
+
+/*section welcome*/
+.welcome {
+    margin: 2%;
+    padding: 2%;
+    justify-content: center;
+}
+
+/*section galeria*/
+.galeria {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.habitaciones {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eventos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img-galeria {
+    width: 100vw;
+}
+
+
+.btn-galeria {
+    text-decoration: none; 
+    font-size: 3vw;
+    background-color: rgba(236,226,198,0.8);
+    width: 16vw;
+    height: 8vw;
+    border-radius: 10px;
+    border: solid rgb(71, 112,108);
+    justify-content: center;
+    position: relative;
+    top: -30vw;
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+.btn-galeria:hover {
+    color:white;
+    transform: scale(1.2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn-galeria a {
+    text-decoration: none; 
+}
+
+/*section serves*/
+.serves{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+    align-items: center;
+}
+.article-serves {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   
+}
+.icon-serves {
+    display: flex;
+    margin: 2px;
+    padding: 2px;
+    width: 150px;
+    align-items: center;
+}
+
+
+/*section info*/
+.info {
+    /*margin: 2%;
+    /*padding: 2%;*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.mapa{
+    width: 100%;
+}
+/*section carrusel */
+
+.carrusel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider{
+    display: none;
+} 
+.static-photo img{
+    width: 100%;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+footer {
+    background-color: rgba(150, 111, 101, 0.5);
+} 
+
+.contenedor-footer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    padding: 20px;
+}
+
+.logo-footer {
+    width: 25vw;
+    max-width: 160px;
+}
+
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacto h6, .contacto ul{
+    padding-left: 0px
+}
+
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.social-media-list {
+    display: flex;
+    gap: 2em
+}
+
+.social-media-list img {
+    width: 50%;
+    max-width: 100px;
+    /*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);*/
+}
+
+.social-media ul {
+    list-style: none;
+}
+
+.contacto ul {
+    list-style: none;
 }
 
 
 
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUIERES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*tablet*/
+@media (min-width: 361px) {
+    
+   
+}
+/*desktop*/
+@media (min-width: 761px) {
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 50px;
+    }
+    /*section carrusel */
+    .static-photo{
+        display: none;
+    }
+    .slider {
+        display: block;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+    }
+    .slider ul {
+        display: flex;
+        animation: cambio 20s infinite alternate linear;
+        width: 400%;
+    }
+    .slider li {
+        width: 100%;
+        list-style: none;
+    }
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+    @keyframes cambio {
+        0%{margin-left: 0;}
+        20%{margin-left: 0;}
+        
+        25%{margin-left: -100%;}
+        45%{margin-left: -100%;}
+        
+        50%{margin-left: -200%;}
+        70%{margin-left: -200%;}
+        
+        75%{margin-left: -300%;}
+        100%{margin-left: -300%;}
+    }
+    header {
+        height: 80px;
+        width: 100vw;
+    
+    }
+    .container-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        width: 100vw;
+    }
+    
+    .logo-mobile {
+        display: none;
+    }
+    
+    .logo-desktop {
+        display: flex;
+        align-items: center;
+        width: 230px;
+        height: 80px;        
+    }
+    .logo-desktop a img {
+        width: 100%;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .recerva-btn {
+        font-size: 30px;
+        width: 120px;
+        height: 50px
+    }
+    .logo-footer {
+        width: 25vw;
+        display: flex;
+        justify-content: center;
+    }
+    .contacto h6, .contacto ul{
+        padding-left: 0px
+    }
+    .social-media {
+        width: 30%;   
+    }
+    .social-media-list {
+        gap: 1em;
+    }
+    .social-media-list li {
+        text-align: center;
+        width: 30%;
+    }
 
-/* sections */
+}
 
 
-/* MAIN - HOME */
 
-/* carrusel */
-.slider{
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-  }
-  .slider ul{
-      display: flex;
-      animation: cambio 20s infinite alternate linear;
-      width: 400%;
-  }
-  .slider li{
-      width: 100%;
-      list-style: none;
-  }
-  .slider img{
-      width: 100%;
-      height: 100%;
-  }
-  @keyframes cambio{
-      0%{margin-left: 0;}
-      20%{margin-left: 0;}
-      
-      25%{margin-left: -100%;}
-      45%{margin-left: -100%;}
-      
-      50%{margin-left: -200%;}
-      70%{margin-left: -200%;}
-      
-      75%{margin-left: -300%;}
-      100%{margin-left: -300%;}
-  }
+@media (min-width: 1000px) {}
