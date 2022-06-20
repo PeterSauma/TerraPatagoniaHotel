@@ -1,28 +1,22 @@
-const gama =[
-    {
-    category:'Premium',
-    passengers: '2-4',
-    price: '$500'
-    },
-    {
-    category:'Suite',
-    passengers: '3',
-    price: '$250'
-    },
-    {
-    category:'Standar',
-    passengers: '2-3',
-    price: '$150'
-    },
-]
+// requerir librerias fs y path
+const fs = require ('fs');
+const path = require ('path')
+
+
+// leer el archivo
+const filePath = path.join(__dirname, "../data/habitacionesDataBase.json")
+
+// controller
 
 
 
 
 const controller ={
     mostrador:(req, res) => {
+        let gama = JSON.parse(fs.readFileSync (filePath, "utf-8"));
         res.render('habitacionesMostrador', {gama})},
     habitacion:(req, res) => {
+        let gama = JSON.parse(fs.readFileSync (filePath, "utf-8"));
         res.render('habitacion', {gama})},
 }
 

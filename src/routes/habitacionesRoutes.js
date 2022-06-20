@@ -6,7 +6,7 @@ const habitacionesController = require ('../controllers/habitacionesController')
 
 
 router.get("/", habitacionesController.mostrador)
-router.get("/habitacion", habitacionesController.habitacion)
+router.get("/:id", habitacionesController.habitacion)
 
 
 
