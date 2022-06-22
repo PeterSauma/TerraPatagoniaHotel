@@ -23,7 +23,7 @@
     font-family: 'Fahkwang';
     padding: 0px;
     box-sizing: border-box;
-    color:  rgb(71, 112,108);;
+    color:  rgb(100, 125, 98);;
 }
 button{
     cursor: pointer;
@@ -59,7 +59,7 @@ h6 {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 a {
@@ -97,26 +97,6 @@ header {
 }
 
 
- /*burger-menu*/
- 
- .burger-menu{
-    flex-grow: 0;
-    text-align: left;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 15px;
-
-    
-    }
-
-.background-burger{
-    width: 100%;
-    background-color: rgba(241, 253, 247, 0.6);
-    color: rgb(71, 112,108);
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 300ms ease;
-}
 /*boton recerva*/
 button.recerva-btn {
     font-size: 24px;
@@ -155,7 +135,7 @@ a.recerva-btn {
 /*nav*/
 
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*MAIN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 main {
@@ -271,13 +251,100 @@ a.btn-galeria {
 .mapa{
     width: 100%;
 }
-/*section carrusel*/
-
-/*slide index*/
 
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mostrador<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+main.mostrador {
+    align-items: center;
+}
+
+h1.h1Mostrador  {
+    font-size: 30px;
+    color: rgb(100, 125,98);
+    margin: 10px;
+}
+
+.section-card-room-mostrador {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-room {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(87,87,86);
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.photo-room {
+    height: 30%;
+    object-fit: contain;
+}
 
 
+.photo-room img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.info-room {
+    width: 100%;
+    height: 70%;
+}
+
+.info-room a { 
+    text-decoration: none; 
+    color: rgb(100, 125, 98);
+}
+
+.description-room {
+    width: 100%;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description-room p {
+    padding: 2px;
+}
+.description-room i {
+    padding: 2px;
+    color: rgb(186, 142, 133);
+}
+
+.room-price {
+    position: relative;
+    z-index: 10;
+    bottom: -30px;
+    left: 70%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(186, 142, 133);
+    color: rgb(100, 125, 98);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    transition: all 300ms;
+}
+
+.room-price:hover {
+    transform: scale(1.2);
+}
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -344,6 +411,17 @@ footer {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUIERES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*tablet*/
 @media (min-width: 361px) {
+    p {
+        font-size: 20px;
+    }
+    h1.h1Mostrador  {
+        font-size: 30px;
+    }
+    .room-price {
+        width: 100px;
+        height: 100px;
+        font-size: 24px;
+    }
     
    
 }
@@ -407,9 +485,30 @@ footer {
         text-align: center;
         width: 30%;
     }
+    h1.h1Mostrador  {
+        font-size: 50px;
+    }
+    .card-room {
+        flex-direction: row;
+        align-items: center;
+    } 
+    .photo-room {
+        width: 40%;
+        margin: 10px;
+    }
+    .info-room {
+        width: 60%;
+        padding: 5px;
+    }
+
 
 }
 
 
 
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+
+    
+
+    
+}
