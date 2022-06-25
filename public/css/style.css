@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Balthazar&family=Fahkwang:wght@400;600;700&display=swap');
 
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BODY<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BODY<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .colorGreen {
     color: rgb(100, 125,98);
 }
@@ -70,7 +70,7 @@ i {
     margin-bottom: 10px;
 }
     
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 header {
     height: 50px;
@@ -135,7 +135,7 @@ a.recerva-btn {
 /*nav*/
 
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MAIN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 main {
@@ -253,7 +253,7 @@ a.btn-galeria {
 }
 
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mostrador<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mostrador piezas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 main.mostrador {
     align-items: center;
@@ -346,8 +346,80 @@ h1.h1Mostrador  {
     transform: scale(1.2);
 }
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>piezas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.habitacion-main{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cuerpo-pieza {
+    margin: 5 px;
+    padding: 5px;
+}
+.cuerpo-pieza ul {
+    display: inline;
+    list-style: none;
+    flex-wrap: nowrap;
+    margin: 3px;
+    padding: 3px;
+}
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.cuerpo-pieza ul li {
+    margin: 3px;
+    padding: 3px;
+    display: flex;
+}
+
+.cuerpo-pieza ul li i {
+    margin-right: 10px;
+}
+
+.encabezado {
+    margin-left: 6px;
+}
+
+.precio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.precio-box {
+    background-color:  rgb(186, 142, 133);
+    color: rgb(0, 0, 0);
+    height: 60px;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    transition: all 300ms;
+}
+
+.precio-box:hover {
+    color: crimson;
+}
+
+
+
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BOOTSTRAP<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*
+.carrusel_bootstrap{
+    height: 40vw;
+}
+*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 footer {
     background-color: rgba(150, 111, 101, 0.5);
@@ -408,7 +480,7 @@ footer {
 
 
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUIERES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUIRES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*tablet*/
 @media (min-width: 361px) {
     p {
@@ -499,6 +571,27 @@ footer {
     .info-room {
         width: 60%;
         padding: 5px;
+    }
+    
+    .precio-box {
+        position: relative;
+        z-index: 10;
+        left: 67vw;
+        top: 10px;
+        height: 120px;
+        width: 120px;
+    }
+        
+    .precio {
+        flex-direction: row;
+        justify-content: flex-start;
+    }   
+    .pasajeros {
+        width: 15%;
+        justify-content: space-between;
+    }
+    .pasajeros i {
+       margin-right: 10px;
     }
 
 
