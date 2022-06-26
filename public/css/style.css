@@ -33,18 +33,21 @@ body {
     font-size: 12px;
     margin: 0px;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 h3{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h4 {
@@ -52,7 +55,7 @@ h4 {
 }
 
 h5 {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h6 {
@@ -75,23 +78,23 @@ i {
 
 header {
     background-color: rgb(255, 255, 255);
-    margin: 10px;
+    padding: 10px;
     width: 100%;
     /*height: 50px;*/
     /*object-fit: contain;*/
 }
 
-.nav-header {
+header div {
     width: 100%;
     height: 100%;
 }
 
-.nav-header a {
+header div a {
     width: 100%;
     height: 100%;
 }
 
-.nav-header a img {
+header div a img {
     width: 100%;
     height: 100%;
 }
@@ -435,6 +438,11 @@ h1.h1Mostrador  {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BOOTSTRAP<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+div.carousel {
+    padding: 10px;
+}
+
+
 /*
 
 .carrusel_bootstrap{
@@ -445,24 +453,24 @@ h1.h1Mostrador  {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 footer {
-   margin: 10px;
+   padding: 10px;
    width: 100%;
    height: auto;
 } 
 
-.guarda-footer-superior {
+section.guarda-footer-superior {
     width: 100%;
     height: 100%;
 }
 
-.guarda-footer-superior img {
+section.guarda-footer-superior img {
     width: 100%;
     height: 100%;
 }
 
-.guarda-footer-inferior {
+section.guarda-footer-inferior {
     margin-top: 12px;
-    width: 100%;
+    width: 740px;
     height: 100%;
     display: flex;
     background-color: rgb(100, 125, 98);
@@ -471,41 +479,88 @@ footer {
 }
 
 
-.guarda-footer-inferior div.derecha {
+section.guarda-footer-inferior article.izquierda {
     width:  75%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
 }
-.guarda-footer-inferior div.derecha img {
-    width:  100%;
+
+section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
+    width: 25%;
+    height: 100%;
+    object-fit: contain;
+}
+
+section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo img {
+    width: 100%;
     height: 100%;
 }
-
-
-.social-media {
-    width: 25%;
+section.guarda-footer-inferior article.izquierda div.contacto {
+    width: 75%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+
+section.guarda-footer-inferior article.izquierda div.contacto p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+section.guarda-footer-inferior article.izquierda div.contacto  p.telefono2  {
+    display: none;
+}
+
+section.guarda-footer-inferior article.izquierda div.contacto  p.email2 {
+    display: none;
+}
+
+section.guarda-footer-inferior article.izquierda div.contacto  p.direccion2  {
+    display: none;
+}
+
+
+
+section.guarda-footer-inferior article.social-media {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 8px;
 }
 
-.social-media-list {
+section.guarda-footer-inferior article.social-media div {
+    width: 20%;
+    height: 100%;
     display: flex;
-   /* gap: 2em*/
+    flex-direction: row;
+    margin: 5px;
+    align-items: center;
 }
 
-.social-media-list img {
-    width: 50%;
-    max-width: 100px;
+
+
+section.guarda-footer-inferior article.social-media div a {
+    width: 100%;
+    height: 100%;
 }
 
-.social-media ul {
-    list-style: none;
-    align-items: center ;
+section.guarda-footer-inferior article.social-media div a img {
+    width: 100%;
+    height: 100%;
 }
 
-.contacto ul {
-    list-style: none;
-}
+
 
 
 
@@ -527,7 +582,6 @@ footer {
     .guarda-footer-inferior {
         margin-top: 15px;
     }
-
 }
 
 
@@ -616,15 +670,30 @@ footer {
     .guarda-footer-inferior {
         margin-top: 20px;
     }
-    .social-media {
-        width: 25%;   
+    section.guarda-footer-inferior article.izquierda div.contacto  p.telefono1 {
+        display: none;
     }
-    .social-media-list {
-        gap: 1em;
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.email1 {
+        display: none;
     }
-    .social-media-list li {
-        text-align: center;
-        width: 30%;
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.direccion1 {
+        display: none;
+    }
+    section.guarda-footer-inferior article.izquierda div.contacto  p.telefono2  {
+        display: block;
+    }
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.email2 {
+        display: block;
+    }
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.direccion2  {
+        display: block;
+    }
+    section.guarda-footer-inferior {
+        width: 100%;
     }
 }
 
@@ -633,5 +702,6 @@ footer {
 @media (min-width: 1000px) {
     .guarda-footer-inferior {
         margin-top: 30px;
-    }    
+    }
 }
+     

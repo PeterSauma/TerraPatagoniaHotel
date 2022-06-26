@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/PeterSauma/TerraPatagoniaHotel#readme",
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.18"
   }
 }
