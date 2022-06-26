@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+<!-- HEAD -->
+<%- include('./partials/head') %>
+<body>
+    <!-- HEADER -->
+    <%- include('./partials/header') %>
+    <!-- MAIN -->
+<main class="habitacion-main">
+    
+    <section class="encabezado">
+        <div class="back-btn"><a href="/habitaciones"><i class="fa-solid fa-arrow-left-long"></i></a></div>
+        <h1>Ejecutiva</h1>
+    </section>
+    
+    <!--Carrusel bootstrap-->
+    <section class="carrusel_bootstrap">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/habitaciones/Ejecutiva/18.jpg" class="d-block w-100" alt="1">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/habitaciones/Ejecutiva/26.jpg" class="d-block w-100" alt="2">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/habitaciones/Ejecutiva/29.jpg" class="d-block w-100" alt="3">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/habitaciones/Ejecutiva/26.jpg" class="d-block w-100" alt="4">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/habitaciones/Ejecutiva/29.jpg" class="d-block w-100" alt="5">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div> 
+    </section>
+    <!-- End Carrusel-->
+    <section class="precio">
+        <div class="pasajeros">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-bed"></i>
+            <i class="fa-solid fa-bed"></i>
+        </div>
+        <div class="precio-box">$500</div>
+    </section>
+    <section class="cuerpo-pieza">
+        <h2>Descripción</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Omnis ad, molestias unde voluptates consectetur alias neque minima minus eum eveniet deleniti error 
+            architecto quam sed quis facere earum nulla adipisci.
+        </p>
+        <ul>
+            <li><i class="colorBronw fa-solid fa-mug-hot"></i><p class="colorBronw">Desayuno incluido</p></li>
+            <li><i class="colorBronw fa-solid fa-kitchen-set"></i><p class="colorBronw">Kitchenette</p></li>
+            <li><i class="colorBronw fa-solid fa-car-side"></i><p class="colorBronw">Cocheras privadas</p></li>
+            <li><i class="colorBronw fa-solid fa-wifi"></i><p class="colorBronw">Servicio de internet</p></li>
+            <li><i class="colorBronw fa-solid fa-tv"></i><p class="colorBronw">Television</p></li>
+            <li><i class="colorBronw fa-solid fa-vault"></i><p class="colorBronw">caja fuerte</p></li>
+        </ul>
+        
+    </section>
+    <section class="encabezado">
+        <div class="back-btn"><a href="/habitaciones"><i class="fa-solid fa-arrow-left-long"></i></a></div>
+    </section>
+    
+</main>
+    <!-- FOOTER -->
+<%- include('./partials/footer') %>
+</body>
+</html>

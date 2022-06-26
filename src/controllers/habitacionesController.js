@@ -11,7 +11,7 @@ const controller ={
     },
 
     suite:(req, res) => {
-        res.render('suite')
+        res.render('suite') 
     },
 
     standar:(req, res) => {
