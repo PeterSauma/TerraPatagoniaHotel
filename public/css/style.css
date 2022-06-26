@@ -173,14 +173,15 @@ main {
 
 /*section welcome*/
 .welcome {
-    margin: 2%;
-    padding: 2%;
+    width: 100%;
+    padding: 10px;
     justify-content: center;
 }
 
 /*section galeria*/
 .galeria {
     width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -208,7 +209,7 @@ main {
 
 
 .img-galeria {
-    width: 100vw;
+    width: 100%;
 }
 
 button.btn-galeria {
@@ -218,18 +219,18 @@ button.btn-galeria {
     border-radius: 10px;
     background-color: rgba(100, 125,98,0.4);
     border: solid 2px rgb(100, 125,98);
-    color: rgb(0,0,0);
+    color: rgb(255,255,255);
     position: relative;
-    top: -30vw;
+    top: -45vw;
     z-index: 10;
     transition: all 300ms;
 }
 
 button.btn-galeria:hover {
-    color:rgb(255, 255, 255);
     background-color:  rgb(100, 125,98);
     transform: scale(1.2);
 }
+
 
 
 
@@ -242,39 +243,60 @@ a.btn-galeria {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2px;
-    padding: 2px;
+    padding: 10px;
     width: 100%;
     align-items: center;
 }
 .article-serves {
-    padding: 3%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-   
 }
+
 .icon-serves {
     display: flex;
-    margin: 2px;
-    padding: 2px;
-    width: 150px;
+    margin: 5px;
+    width: 260px;
     align-items: center;
 }
+.icon-serves i {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    width: 20%;
+    height: 100%;
+}
+
+.icon-serves p {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    width: 80%;
+    height: 100%;
+}
+
 
 
 /*section info*/
 .info {
-    /*margin: 2%;
-    /*padding: 2%;*/
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
 }
-.mapa{
+.mapa {
+    width: 100%;
+    padding: 10px;
+}
+
+.mapa a {
     width: 100%;
 }
+
+.mapa a img {
+    width: 100%;
+}
+
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mostrador piezas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -443,12 +465,6 @@ div.carousel {
 }
 
 
-/*
-
-.carrusel_bootstrap{
-    height: 40vw;
-}
-*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -470,7 +486,7 @@ section.guarda-footer-superior img {
 
 section.guarda-footer-inferior {
     margin-top: 12px;
-    width: 740px;
+    width: 100%;
     height: 100%;
     display: flex;
     background-color: rgb(100, 125, 98);
@@ -489,6 +505,7 @@ section.guarda-footer-inferior article.izquierda {
 }
 
 section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
+    display: none;
     width: 25%;
     height: 100%;
     object-fit: contain;
@@ -582,6 +599,28 @@ section.guarda-footer-inferior article.social-media div a img {
     .guarda-footer-inferior {
         margin-top: 15px;
     }
+    section.guarda-footer-inferior article.izquierda div.contacto  p.telefono1 {
+        display: none;
+    }
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.email1 {
+        display: none;
+    }
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.direccion1 {
+        display: none;
+    }
+    section.guarda-footer-inferior article.izquierda div.contacto  p.telefono2  {
+        display: block;
+    }
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.email2 {
+        display: block;
+    }
+    
+    section.guarda-footer-inferior article.izquierda div.contacto  p.direccion2  {
+        display: block;
+    }
 }
 
 
@@ -670,30 +709,8 @@ section.guarda-footer-inferior article.social-media div a img {
     .guarda-footer-inferior {
         margin-top: 20px;
     }
-    section.guarda-footer-inferior article.izquierda div.contacto  p.telefono1 {
-        display: none;
-    }
-    
-    section.guarda-footer-inferior article.izquierda div.contacto  p.email1 {
-        display: none;
-    }
-    
-    section.guarda-footer-inferior article.izquierda div.contacto  p.direccion1 {
-        display: none;
-    }
-    section.guarda-footer-inferior article.izquierda div.contacto  p.telefono2  {
+    section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
         display: block;
-    }
-    
-    section.guarda-footer-inferior article.izquierda div.contacto  p.email2 {
-        display: block;
-    }
-    
-    section.guarda-footer-inferior article.izquierda div.contacto  p.direccion2  {
-        display: block;
-    }
-    section.guarda-footer-inferior {
-        width: 100%;
     }
 }
 
