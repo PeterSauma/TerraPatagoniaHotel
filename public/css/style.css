@@ -122,32 +122,29 @@ header div a img {
 */
 
 /*boton recerva*/
-button.recerva-btn {
-    font-size: 24px;
-    width: 120px;
-    height: 45px;
-    border-radius: 10px;
-    background-color: rgba(0,0,0,0);
-    border: solid 2px rgb(100, 125,98);
-    color: rgb(100, 125,98);
-    transition: all 300ms;
+
+article.reserva {
+    width: 100%;
+    padding: 10px;
 }
 
-button.recerva-btn:hover {
-    color:rgb(255, 255, 255);
-    background-color:  rgb(100, 125,98);
-    /*transform: scale(1.1);*/
+article.reserva a {    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: rgb(100, 125, 98);
 }
 
-
-a.recerva-btn {
-    text-decoration: none; 
-}
+article.reserva a i {
+    height: 100%;
+    margin: 5px;
+} 
 
 
 /* hover burger-menu*/
 
-.background-burger:hover{
+.background-burger:hover {
     background-color: rgb(60,79,100);
     color: white;
     transform: scale(1.1);
@@ -185,8 +182,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
+
 
 .habitaciones {
     width: 100%;
@@ -211,6 +208,7 @@ main {
 .img-galeria {
     width: 100%;
 }
+
 
 button.btn-galeria {
     font-size: 24px;
@@ -325,7 +323,7 @@ h1.h1Mostrador  {
     flex-direction: column;
     width:100%;
     justify-content: space-around;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     box-shadow: 0px 0px 10px rgb(87,87,86);
     margin-bottom: 30px;
     padding: 15px;
@@ -341,7 +339,7 @@ h1.h1Mostrador  {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
 }
 
 .info-room {
@@ -379,7 +377,7 @@ h1.h1Mostrador  {
     width: 60px;
     height: 60px;
     background-color: rgb(186, 142, 133);
-    color: rgb(100, 125, 98);
+    color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -437,7 +435,7 @@ h1.h1Mostrador  {
 
 .precio-box {
     background-color:  rgb(186, 142, 133);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 60px;
     width: 98%;
     display: flex;
@@ -450,7 +448,7 @@ h1.h1Mostrador  {
 }
 
 .precio-box:hover {
-    color: crimson;
+    transform: scale(1.1);
 }
 
 
@@ -651,17 +649,6 @@ section.guarda-footer-inferior article.social-media div a img {
     .burger-menu {
         display: none;
     }
-
-    button.recerva-btn {
-        font-size: 30px;
-        width: 170px;
-        height: 60px;
-    }
-        
-    button.recerva-btn:hover {
-        transform: scale(1.2);
-    }
-
     .logo-footer {
         width: 25vw;
         display: flex;
