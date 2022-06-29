@@ -1,13 +1,12 @@
 /*se importa la tipografía Balthazar y Alegreya SC de google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Balthazar&family=Fahkwang:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&family=Balthazar&family=Fahkwang:wght@200;400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BODY<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .colorGreen {
     color: rgb(100, 125,98);
 }
 
-.colorBN{
+.colorBN {
     color: rgb(87,87,86);
 }
 
@@ -20,12 +19,13 @@
 }
 
 * {
-    font-family: 'Fahkwang';
+    font-family: 'Open Sans','Fahkwang', 'Balthazar';
     padding: 0px;
     box-sizing: border-box;
     color:  rgb(100, 125, 98);;
 }
-button{
+
+button {
     cursor: pointer;
 }
 
@@ -46,29 +46,30 @@ h2 {
     font-size: 18px;
 }
 
-h3{
-    font-size: 18px;
+h3 {
+    font-size: 16px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 h6 {
-    font-size: 14px;
+    font-size: 10px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a {
     color: rgb(60, 79, 100);
 }
+
 i {
     font-size: 2em;
     margin-bottom: 10px;
@@ -211,12 +212,11 @@ main {
 
 
 button.btn-galeria {
-    font-size: 24px;
-    width: 170px;
-    height: 45px;
-    border-radius: 10px;
-    background-color: rgba(100, 125,98,0.4);
-    border: solid 2px rgb(100, 125,98);
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(100, 125,98,0);
+    border: solid 1.5px rgb(100, 125,98);
     color: rgb(255,255,255);
     position: relative;
     top: -45vw;
@@ -230,11 +230,15 @@ button.btn-galeria:hover {
 }
 
 
-
-
-a.btn-galeria {
-    text-decoration: none; 
+section.galeria div a {
+    text-decoration: none;
+    width: 100%; 
+    display: contents;
 }
+
+/*a.btn-galeria {
+
+}*/
 
 /*section serves*/
 .serves {
@@ -245,6 +249,7 @@ a.btn-galeria {
     width: 100%;
     align-items: center;
 }
+
 .article-serves {
     display: flex;
     flex-wrap: wrap;
@@ -254,11 +259,14 @@ a.btn-galeria {
 .icon-serves {
     display: flex;
     margin: 5px;
+    padding: 2px;
     width: 260px;
     align-items: center;
 }
+
 .icon-serves i {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-right: 2px;
     width: 20%;
@@ -267,6 +275,7 @@ a.btn-galeria {
 
 .icon-serves p {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     padding: 2px;
     width: 80%;
@@ -304,7 +313,6 @@ main.mostrador {
 }
 
 h1.h1Mostrador  {
-    font-size: 30px;
     color: rgb(100, 125,98);
     margin: 10px;
 }
@@ -368,14 +376,16 @@ h1.h1Mostrador  {
     padding: 2px;
     color: rgb(186, 142, 133);
 }
-
+precio
 .room-price {
+    
+    padding: 5px;
     position: relative;
     z-index: 10;
     bottom: -30px;
     left: 70%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background-color: rgb(186, 142, 133);
     color: rgb(255, 255, 255);
     align-items: center;
@@ -391,6 +401,7 @@ h1.h1Mostrador  {
     transform: scale(1.2);
 }
 
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>piezas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 .habitacion-main{
     width: 100%;
@@ -398,32 +409,17 @@ h1.h1Mostrador  {
     align-items: center;
 }
 .cuerpo-pieza {
-    margin: 5 px;
-    padding: 5px;
-}
-.cuerpo-pieza ul {
-    display: inline;
-    list-style: none;
-    flex-wrap: nowrap;
-    margin: 3px;
-    padding: 3px;
+    padding: 20px;
 }
 
-.cuerpo-pieza ul li {
-    margin: 3px;
-    padding: 3px;
-    display: flex;
+section.encabezado {
+    margin-left: 6px;
 }
-
-.cuerpo-pieza ul li i {
-    margin-right: 10px;
-}
-
-.encabezado {
+section.encabezado div.back-btn {
     margin-left: 6px;
 }
 
-.precio {
+article.tarifas {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -432,36 +428,100 @@ h1.h1Mostrador  {
     margin: 5px;
     padding: 5px;
 }
-
-.precio-box {
-    background-color:  rgb(186, 142, 133);
-    color: rgb(255, 255, 255);
-    height: 60px;
-    width: 98%;
+div.pasajeros {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    transition: all 300ms;
+    height: 100%;
+    width: 100%;
 }
 
-.precio-box:hover {
-    transform: scale(1.1);
+div.pasajeros i {
+    margin: 0px 5px;
 }
-
-
-
-
-
-
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BOOTSTRAP<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 div.carousel {
     padding: 10px;
 }
-
+button.btn-primary {
+    background-color: black;
+    border: none;
+    transition: all 300ms;
+}
+button.btn-primary:hover {
+    transform: scale(1.1);
+    background-color: black;
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>VENTANA EMERGENTE<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+h2.encabezado {
+    font-size: 24px;
+}
+.modal{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+} 
+.contenedor{
+	width: 95%;
+	height: auto;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+} 
+.contenedor header{
+	padding: 10px;
+	background: rgb(100, 125, 98);
+	color: rgb(255, 255, 255);
+}
+.contenedor label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+	cursor: pointer;
+}
+.contenido{
+	width: 100%;
+	padding: 10px; 
+}
+.contenido h3{
+	margin-bottom: 10px;
+}
+.contenido p{
+	margin-bottom: 7px;
+}
+#btn-modal{
+	display: none;
+}
+.lbl-modal{
+	background: rgb(255, 255, 255);
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -583,16 +643,27 @@ section.guarda-footer-inferior article.social-media div a img {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>MEDIA QUIRES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /*tablet*/
 @media (min-width: 361px) {
-    p {
-        font-size: 20px;
+    h1 {
+        font-size: 25px;
     }
-    h1.h1Mostrador  {
-        font-size: 30px;
+    h2 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 18px;
+    }
+    button.btn-galeria {
+        font-size: 24px;
+        width: 170px;
+        height: 45px;
     }
     .room-price {
         width: 100px;
         height: 100px;
         font-size: 24px;
+    }
+    div.pasajeros i {
+        margin: 0px 10px;
     }
     .guarda-footer-inferior {
         margin-top: 15px;
@@ -621,22 +692,23 @@ section.guarda-footer-inferior article.social-media div a img {
     }
 }
 
-
 /*desktop*/
 @media (min-width: 761px) {
     h1 {
-        font-size: 60px;
+        font-size: 45px;
     }
-    
     h2 {
-        font-size: 50px;
+        font-size: 30px;
     }
-
-     
+    p {
+        font-size: 28px;
+    }
     .logo-mobile {
         display: none;
     }
-    
+    p.service-room{
+        font-size: 18px;
+    }
     .logo-desktop {
         display: flex;
         align-items: center;
@@ -657,10 +729,7 @@ section.guarda-footer-inferior article.social-media div a img {
     .contacto h6, .contacto ul{
         padding-left: 0px
     }
-    h1.h1Mostrador  {
-        font-size: 50px;
-    }
-    .card-room {
+     .card-room {
         flex-direction: row;
         align-items: center;
     } 
@@ -671,28 +740,7 @@ section.guarda-footer-inferior article.social-media div a img {
     .info-room {
         width: 60%;
         padding: 5px;
-    }
-    
-    .precio-box {
-        position: relative;
-        z-index: 10;
-        left: 67vw;
-        top: 10px;
-        height: 120px;
-        width: 120px;
-    }
-        
-    .precio {
-        flex-direction: row;
-        justify-content: flex-start;
-    }   
-    .pasajeros {
-        width: 15%;
-        justify-content: space-between;
-    }
-    .pasajeros i {
-       margin-right: 10px;
-    }
+    }        
     .guarda-footer-inferior {
         margin-top: 20px;
     }
@@ -704,8 +752,34 @@ section.guarda-footer-inferior article.social-media div a img {
 
 
 @media (min-width: 1000px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 35px;
+    }
+    .icon-serves p {
+        font-size: 28px;
+    }
     .guarda-footer-inferior {
         margin-top: 30px;
     }
 }
+
+@media (min-width: 1300px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 45px;
+    }
+}
      
+
+
