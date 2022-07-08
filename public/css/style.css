@@ -67,7 +67,8 @@ p {
 }
 
 a {
-    color: rgb(60, 79, 100);
+    color: rgb(100, 125, 98);
+    text-decoration: none;
 }
 
 i {
@@ -543,10 +544,11 @@ section.guarda-footer-superior img {
 }
 
 section.guarda-footer-inferior {
+    display: flex;
+    flex-direction: column;
     margin-top: 12px;
     width: 100%;
     height: 100%;
-    display: flex;
     background-color: rgb(100, 125, 98);
     justify-content: flex-start;
     align-items: center;
@@ -554,27 +556,27 @@ section.guarda-footer-inferior {
 
 
 section.guarda-footer-inferior article.izquierda {
-    width:  75%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
 }
+ 
 
-section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
+footer section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
     display: none;
     width: 25%;
     height: 100%;
     object-fit: contain;
 }
 
-section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo img {
-    width: 100%;
-    height: 100%;
+footer section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo img {
+    display: none;
 }
 section.guarda-footer-inferior article.izquierda div.contacto {
-    width: 75%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -605,20 +607,18 @@ section.guarda-footer-inferior article.izquierda div.contacto  p.direccion2  {
 
 
 section.guarda-footer-inferior article.social-media {
-    width: 25%;
-    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 8px;
 }
 
 section.guarda-footer-inferior article.social-media div {
-    width: 20%;
-    height: 100%;
+    width: 30px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     margin: 5px;
     align-items: center;
 }
@@ -668,6 +668,9 @@ section.guarda-footer-inferior article.social-media div a img {
     .guarda-footer-inferior {
         margin-top: 15px;
     }
+    section.guarda-footer-inferior article.izquierda div.contacto {
+        width: 75%;
+    }
     section.guarda-footer-inferior article.izquierda div.contacto  p.telefono1 {
         display: none;
     }
@@ -689,6 +692,17 @@ section.guarda-footer-inferior article.social-media div a img {
     
     section.guarda-footer-inferior article.izquierda div.contacto  p.direccion2  {
         display: block;
+    }
+}
+
+@media (min-width: 550px) {
+    footer section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
+        display: block;
+    }
+    footer section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo img {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -743,9 +757,14 @@ section.guarda-footer-inferior article.social-media div a img {
     }        
     .guarda-footer-inferior {
         margin-top: 20px;
+        flex-direction: row;
     }
-    section.guarda-footer-inferior article.izquierda div.zocaloIzquierdo {
-        display: block;
+    section.guarda-footer-inferior {
+        flex-direction: row;
+    }
+    section.guarda-footer-inferior article.social-media {
+        width: 10%;
+        flex-direction: column;
     }
 }
 
