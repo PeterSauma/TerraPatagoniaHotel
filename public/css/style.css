@@ -440,6 +440,12 @@ div.pasajeros {
 div.pasajeros i {
     margin: 0px 5px;
 }
+
+section.encabezado div.back-btn a {
+    text-decoration: none;
+}
+
+
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>BOOTSTRAP<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 div.carousel {
@@ -771,6 +777,10 @@ section.guarda-footer-inferior article.social-media div a img {
 
 
 @media (min-width: 1000px) {
+    body {
+        margin: auto;
+        width: 80vw;
+    }
     h1 {
         font-size: 60px;
     }
