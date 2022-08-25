@@ -9,5 +9,6 @@ router.get("/", mainControllers.index)
 
 router.get("/home", mainControllers.index )
 
+router.get("/galery", mainControllers.galery )
 
 module.exports =router

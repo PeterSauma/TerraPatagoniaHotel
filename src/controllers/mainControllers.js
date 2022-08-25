@@ -1,8 +1,10 @@
 const controller ={
     index: (req, res) => {
-        res.render('index')},
-    
-
+        res.render('index')
+    },
+    galery: (req, res) => {
+        res.render('galery')
+    },
 }
 
 

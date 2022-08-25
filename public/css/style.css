@@ -199,7 +199,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
-.eventos {
+.galery {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -529,7 +529,63 @@ h2.encabezado {
 	border-radius: 4px;
 	cursor: pointer;
 }
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Image Galery<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+.h1-galery{
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.img-galery {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    gap: 30px;
+}
+
+.imgeGalery {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.imgeGalery:hover{
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 800px;
+}
+
+
+
+.full-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -795,6 +851,9 @@ section.guarda-footer-inferior article.social-media div a img {
     }
     .guarda-footer-inferior {
         margin-top: 30px;
+    }
+    button.btn-galeria {
+        top: -30vw;
     }
 }
 
