@@ -1,58 +1,8 @@
+Hola mundo!
+Bienvenido a mi primer proyecto de Front-End
+Este es un pequeño repositorio en el que estoy trabajando y actualizando constantemente. Tiene mucha significancia para mi porque es el primer trabajo realizado desde cero por mi mismo.
+Estoy actualmente desarrollandolo de a poco y agregandole nuevas funcionalidades. Poximamente estará deployado en React.
 
-## git ignore 
---Ignore Mac system files
-.DS_store
+Para ver funcionar este repositorio vicita la siguiente página web:
 
---Ignore node_modules folder
-node_modules
-
---Ignore all text files
-*.txt
-
---Ignore files related to API keys
-.env
-
-### Pre-requisitos 📋
-
---node.js
---express
---nodemon
---template engine (ejs)
---multe
---method-override
-
-### Instalación 🔧
-
-Instalar 'node_modules' en el proyecto
-
-_source: https://expressjs.com/es/starter/installing.html_
-
-npm install express -save
-
-
-Instalar 'nodemon'
-
-_source: https://www.npmjs.com/package/gui-licenses-export
-
-npm install -g nodemon
-npm install --save-dev nodemon
-
-Instalar 'template engine'
-
-_source: https://www.npmjs.com/package/ejs
-
-npm install ejs
-
-Instalar 'multer'
-
-_source: https://www.npmjs.com/package/multer
-
-npm install --save multer
-
-
-Instalar 'method-override'
-
-__source: https://www.npmjs.com/package/method-override
-
-npm install method-override
-
+hotelterrapatagonia.com
