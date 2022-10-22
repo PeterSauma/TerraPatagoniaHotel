@@ -38,6 +38,7 @@ body {
     align-items: center;
 }
 
+
 h1 {
     font-size: 20px;
 }
@@ -551,12 +552,22 @@ h2.encabezado {
     width: 100%;
     cursor: pointer;
     transition: 0.8s;
+    display: block;
+    margin: auto;
 }
 
 .imgeGalery:hover{
     transform: scale(1.1);
     filter: brightness(80%);
 }
+
+
+.img-galery .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .full-img {
     width: 100%;
@@ -572,8 +583,8 @@ h2.encabezado {
 }
 
 .full-img img {
-    width: 90%;
-    max-width: 800px;
+    height: 90%;
+    max-height: 800px;
 }
 
 

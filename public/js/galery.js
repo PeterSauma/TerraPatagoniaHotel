@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
 
-    //queySelectors
+ //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>queySelectors<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
     //1
     let fullImgBox1 = document.querySelector('#fullImgBox1')
     let fullImg1 = document.querySelector('#fullImg1')
@@ -155,10 +155,13 @@ window.addEventListener('load', function(){
     let fullImgBox38 = document.querySelector('#fullImgBox38')
     let fullImg38 = document.querySelector('#fullImg38')
     let closeImg38 =document.querySelector('#closeImg38')
+    //39
+    let fullImgBox39 = document.querySelector('#fullImgBox39')
+    let fullImg39 = document.querySelector('#fullImg39')
+    let closeImg39 =document.querySelector('#closeImg39')
 
 
-
-    //Evento abrir imagen
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Evento abrir imagen<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     //1
     fullImg1.addEventListener('click', function(){
         fullImgBox1.style.display= 'flex'; 
@@ -313,8 +316,13 @@ window.addEventListener('load', function(){
     fullImg38.addEventListener('click', function(){
         fullImgBox38.style.display= 'flex'; 
     })
+    //39
+    fullImg39.addEventListener('click', function(){
+        fullImgBox39.style.display= 'flex'; 
+    })
 
-    //Evento cerrar imagen  
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Evento cerrar imagen<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ 
     //1
     closeImg1.addEventListener('click', function(){
         fullImgBox1.style.display= 'none'; 
@@ -468,6 +476,10 @@ window.addEventListener('load', function(){
     //38
     closeImg38.addEventListener('click', function(){
         fullImgBox38.style.display= 'none'; 
+    })
+    //39
+    closeImg39.addEventListener('click', function(){
+        fullImgBox39.style.display= 'none'; 
     })
     
 })
