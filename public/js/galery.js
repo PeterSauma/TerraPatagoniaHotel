@@ -159,6 +159,79 @@ window.addEventListener('load', function(){
     let fullImgBox39 = document.querySelector('#fullImgBox39')
     let fullImg39 = document.querySelector('#fullImg39')
     let closeImg39 =document.querySelector('#closeImg39')
+    //40
+    let fullImgBox40 = document.querySelector('#fullImgBox40')
+    let fullImg40 = document.querySelector('#fullImg40')
+    let closeImg40 =document.querySelector('#closeImg40')
+    //41
+    let fullImgBox41 = document.querySelector('#fullImgBox41')
+    let fullImg41 = document.querySelector('#fullImg41')
+    let closeImg41 =document.querySelector('#closeImg41')
+    //42
+    let fullImgBox42 = document.querySelector('#fullImgBox42')
+    let fullImg42 = document.querySelector('#fullImg42')
+    let closeImg42 =document.querySelector('#closeImg42')
+    //43
+    let fullImgBox43 = document.querySelector('#fullImgBox43')
+    let fullImg43 = document.querySelector('#fullImg43')
+    let closeImg43 =document.querySelector('#closeImg43')
+    //44
+    let fullImgBox44 = document.querySelector('#fullImgBox44')
+    let fullImg44 = document.querySelector('#fullImg44')
+    let closeImg44 =document.querySelector('#closeImg44')
+    //45
+    let fullImgBox45 = document.querySelector('#fullImgBox45')
+    let fullImg45 = document.querySelector('#fullImg45')
+    let closeImg45 =document.querySelector('#closeImg45')
+    //46
+    let fullImgBox46 = document.querySelector('#fullImgBox46')
+    let fullImg46 = document.querySelector('#fullImg46')
+    let closeImg46 =document.querySelector('#closeImg46')
+    //47
+    let fullImgBox47 = document.querySelector('#fullImgBox47')
+    let fullImg47 = document.querySelector('#fullImg47')
+    let closeImg47 =document.querySelector('#closeImg47')
+    //48
+    let fullImgBox48 = document.querySelector('#fullImgBox48')
+    let fullImg48 = document.querySelector('#fullImg48')
+    let closeImg48 =document.querySelector('#closeImg48')
+    //49
+    let fullImgBox49 = document.querySelector('#fullImgBox49')
+    let fullImg49 = document.querySelector('#fullImg49')
+    let closeImg49 =document.querySelector('#closeImg49')
+    //50
+    let fullImgBox50 = document.querySelector('#fullImgBox50')
+    let fullImg50 = document.querySelector('#fullImg50')
+    let closeImg50 =document.querySelector('#closeImg50')
+    //51
+    let fullImgBox51 = document.querySelector('#fullImgBox51')
+    let fullImg51 = document.querySelector('#fullImg51')
+    let closeImg51 =document.querySelector('#closeImg51')
+    //52
+    let fullImgBox52 = document.querySelector('#fullImgBox52')
+    let fullImg52 = document.querySelector('#fullImg52')
+    let closeImg52 =document.querySelector('#closeImg52')
+    //53
+    let fullImgBox53 = document.querySelector('#fullImgBox53')
+    let fullImg53 = document.querySelector('#fullImg53')
+    let closeImg53 =document.querySelector('#closeImg53')
+    //54
+    let fullImgBox54 = document.querySelector('#fullImgBox54')
+    let fullImg54 = document.querySelector('#fullImg54')
+    let closeImg54 =document.querySelector('#closeImg54')
+    //55
+    let fullImgBox55 = document.querySelector('#fullImgBox55')
+    let fullImg55 = document.querySelector('#fullImg55')
+    let closeImg55 =document.querySelector('#closeImg55')
+    //56
+    let fullImgBox56 = document.querySelector('#fullImgBox56')
+    let fullImg56 = document.querySelector('#fullImg56')
+    let closeImg56 =document.querySelector('#closeImg56')
+    //57
+    let fullImgBox57 = document.querySelector('#fullImgBox57')
+    let fullImg57 = document.querySelector('#fullImg57')
+    let closeImg57 =document.querySelector('#closeImg57')
+
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Evento abrir imagen<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -320,6 +393,80 @@ window.addEventListener('load', function(){
     fullImg39.addEventListener('click', function(){
         fullImgBox39.style.display= 'flex'; 
     })
+    //40
+    fullImg40.addEventListener('click', function(){
+        fullImgBox40.style.display= 'flex'; 
+    })
+    //41
+    fullImg41.addEventListener('click', function(){
+        fullImgBox41.style.display= 'flex'; 
+    })
+    //42
+    fullImg42.addEventListener('click', function(){
+        fullImgBox42.style.display= 'flex'; 
+    })
+    //43
+    fullImg43.addEventListener('click', function(){
+        fullImgBox43.style.display= 'flex'; 
+    })
+    //44
+    fullImg44.addEventListener('click', function(){
+        fullImgBox44.style.display= 'flex'; 
+    })
+    //45
+    fullImg45.addEventListener('click', function(){
+        fullImgBox45.style.display= 'flex'; 
+    })
+    //46
+    fullImg46.addEventListener('click', function(){
+        fullImgBox46.style.display= 'flex'; 
+    })
+    //47
+    fullImg47.addEventListener('click', function(){
+        fullImgBox47.style.display= 'flex'; 
+    })
+    //48
+    fullImg48.addEventListener('click', function(){
+        fullImgBox48.style.display= 'flex'; 
+    })
+    //49
+    fullImg49.addEventListener('click', function(){
+        fullImgBox49.style.display= 'flex'; 
+    })
+    //50
+    fullImg50.addEventListener('click', function(){
+        fullImgBox50.style.display= 'flex'; 
+    })
+    //51
+    fullImg51.addEventListener('click', function(){
+        fullImgBox51.style.display= 'flex'; 
+    })
+    /*
+    //52
+    fullImg52.addEventListener('click', function(){
+        fullImgBox52.style.display= 'flex'; 
+    })
+    //53
+    fullImg53.addEventListener('click', function(){
+        fullImgBox53.style.display= 'flex'; 
+    })
+    //54
+    fullImg54.addEventListener('click', function(){
+        fullImgBox54.style.display= 'flex'; 
+    })
+    //55
+    fullImg55.addEventListener('click', function(){
+        fullImgBox55.style.display= 'flex'; 
+    })
+    //56
+    fullImg56.addEventListener('click', function(){
+        fullImgBox56.style.display= 'flex'; 
+    })
+    //57
+    fullImg57.addEventListener('click', function(){
+        fullImgBox57.style.display= 'flex'; 
+    })
+*/
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Evento cerrar imagen<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
  
@@ -481,5 +628,80 @@ window.addEventListener('load', function(){
     closeImg39.addEventListener('click', function(){
         fullImgBox39.style.display= 'none'; 
     })
-    
+    //40
+    closeImg40.addEventListener('click', function(){
+        fullImgBox40.style.display= 'none'; 
+    })
+    //41
+    closeImg41.addEventListener('click', function(){
+        fullImgBox41.style.display= 'none'; 
+    })
+    //42
+    closeImg42.addEventListener('click', function(){
+        fullImgBox42.style.display= 'none'; 
+    })
+    //43
+    closeImg43.addEventListener('click', function(){
+        fullImgBox43.style.display= 'none'; 
+    })
+    //44
+    closeImg44.addEventListener('click', function(){
+        fullImgBox44.style.display= 'none'; 
+    })
+    //45
+    closeImg45.addEventListener('click', function(){
+        fullImgBox45.style.display= 'none'; 
+    })
+    //46
+    closeImg46.addEventListener('click', function(){
+        fullImgBox46.style.display= 'none'; 
+    })
+    //47
+    closeImg47.addEventListener('click', function(){
+        fullImgBox47.style.display= 'none'; 
+    })
+    //48
+    closeImg48.addEventListener('click', function(){
+        fullImgBox48.style.display= 'none'; 
+    })
+    //49
+    closeImg49.addEventListener('click', function(){
+        fullImgBox49.style.display= 'none'; 
+    })
+    //50
+    closeImg50.addEventListener('click', function(){
+        fullImgBox50.style.display= 'none'; 
+    })
+    //51
+    closeImg51.addEventListener('click', function(){
+        fullImgBox51.style.display= 'none'; 
+    })
+    /*
+    //52
+    closeImg52.addEventListener('click', function(){
+        fullImgBox52.style.display= 'none'; 
+    })
+    //53
+    closeImg53.addEventListener('click', function(){
+        fullImgBox53.style.display= 'none'; 
+    })
+    //54
+    closeImg54.addEventListener('click', function(){
+        fullImgBox54.style.display= 'none'; 
+    })
+    //55
+    closeImg55.addEventListener('click', function(){
+        fullImgBox55.style.display= 'none'; 
+    })
+    //56
+    closeImg56.addEventListener('click', function(){
+        fullImgBox56.style.display= 'none'; 
+    })
+    //57
+    closeImg57.addEventListener('click', function(){
+        fullImgBox57.style.display= 'none'; 
+    })
+
+*/
+        
 })
