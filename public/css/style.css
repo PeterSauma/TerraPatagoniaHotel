@@ -307,6 +307,38 @@ section.galeria div a {
 }
 
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Banner index<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.full-imgBanner {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 90;
+}
+
+.full-imgBanner img {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
+.full-imgBanner span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mostrador piezas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -583,8 +615,8 @@ h2.encabezado {
 }
 
 .full-img img {
-    height: 90%;
-    max-height: 800px;
+    width: 100%;
+    max-width: 600px;
 }
 
 
@@ -597,42 +629,6 @@ h2.encabezado {
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-
-
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Banner Home<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-.full-imgBanner {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.9);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 90;
-}
-
-.full-imgBanner img {
-    height: 90%;
-    max-height: 800px;
-}
-
-
-
-.full-imgBanner span {
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-
-
-
 
 
 
