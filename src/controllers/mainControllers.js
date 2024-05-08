@@ -5,6 +5,9 @@ const controller ={
     galery: (req, res) => {
         res.render('galery')
     },
+    spa: (req, res) => {
+        res.render('spa')
+    },
 }
 
 

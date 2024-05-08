@@ -11,4 +11,6 @@ router.get("/home", mainControllers.index )
 
 router.get("/galery", mainControllers.galery )
 
+router.get("/spa", mainControllers.spa )
+
 module.exports =router

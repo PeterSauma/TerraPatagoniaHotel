@@ -26,6 +26,7 @@ const habitacionesRoutes = require('./src/routes/habitacionesRoutes'); // Rutas 
 app.use('/', mainRoutes);
 app.use('/habitaciones', habitacionesRoutes);
 
+
 //montar el servidor                                                                                                                                                                                                                                                                                                                             
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
