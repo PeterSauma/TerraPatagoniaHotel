@@ -1,1 +1,78 @@
-<h1>Hola mundo</h1>
+<!DOCTYPE html> 
+<html> 
+<!-- HEAD -->
+<%- include('./partials/head') %>
+<body>
+    <!-- HEADER -->
+    <%- include('./partials/header') %>
+    <!-- MAIN -->
+    <main class="spa">
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Banner<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+            <div class="spaBanner">
+                <img src="/images/spa/spaBanner.jpg" class="imgeSpa" alt="1">
+                <div class="spaPharagraph">
+                    <p class="spaPharagraph"  id="fullSliderSpa">
+                        ¡Descubrí nuestro spa! 
+                        <br/>
+                        Ahora te ofrecemos distintos circuitos para puedas disfrutar de una experiencia incomparable.
+                        <br/>
+                        Sumérgete en un oasis de relajación con nuestra variedad de masajes, que incluyen opciones relajantes, descontracturantes, faciales y combinados. Vní a renovar tu cuerpo y mente.
+                        <br/>
+                        ¡No te pierdas nuestras promociones especiales! Haz clic aquí para descubrir más 
+                    </p>
+                </div>
+            </div>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Full screen Slider<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+            <div class="fullSliderSpaBox" id="fullSliderSpaBox">
+                <!--Slider bootstrap-->
+                <section class="carruselBootstrapSpa">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="/images/spa/1.jpg" class="d-block w-100" alt="1">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <img src="/images/spa/2.jpg" class="d-block w-100" alt="2">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="3000">
+                            <img src="/images/spa/3.jpg" class="d-block w-100" alt="3">
+                          </div>
+                          <div class="carousel-item" data-bs-interval="4000">
+                            <img src="/images/spa/4.jpg" class="d-block w-100" alt="4">
+                          </div>
+                          <div class="carousel-item" >
+                            <img src="/images/spa/5.jpg" class="d-block w-100" alt="5">
+                          </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+                <!--End slider-->
+                <span id="closeSpaSlider">X</span>
+            </div>
+
+    </main>
+    <!-- FOOTER -->
+<%- include('./partials/footer') %>
+<script src="/js/spa.js"></script>
+</body>
+</html>
