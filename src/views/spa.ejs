@@ -8,12 +8,16 @@
     <!-- MAIN -->
     <main class="spa">
         <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Full screen Carrusel<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-        <section class="carrusel">
-        <!--Carrusel-->
+        <section class="carrusel" id="fullImgBox1">
+            <!--Carrusel-->
             <div class="contenedor-slider">
-                <!--Boton Izquierdo-->
+               <!--Boton Izquierdo-->
                 <div class="icono-izquierdo">
-                    <i class="btnCarrucelJS fa-solid fa-chevron-left"></i>
+                    <span class="arrowSlider material-symbols-outlined">arrow_forward_ios</span>
+                </div>
+                <!--Boton Derecho-->
+                <div class="icono-derecho">
+                    <span class="arrowSlider material-symbols-outlined">arrow_forward_ios</span>
                 </div>
                 <!--Imagnenes Slider-->
                 <div class="slider-screen">
@@ -25,18 +29,16 @@
                         <img decoding="async" class="img-slider" src="/images/spa/5.jpg" alt="">
                     </div>
                 </div>
-                <!--Boton Derecho-->
-                <div class="icono-derecho">
-                    <i class="btnCarrucelJS fa-solid fa-chevron-right"></i>
-                </div>
             </div>
+            <!--Boton cerrar-->
+            <span class="close" id="closeImg1">X</span>
         </section>
 
         
-        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Banner<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< --
-        <div class="spaBanner">
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Banner<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <section class="spaBanner">
             <img src="/images/spa/spaBanner.jpg" class="imgeSpa" alt="1">
-            <div class="spaPharagraph">
+            <div class="spaPharagraphDiv">
                 <p class="spaPharagraph">
                     ¡Descubrí nuestro spa! 
                     <br/>
@@ -44,14 +46,18 @@
                     <br/>
                     Sumérgete en un oasis de relajación con nuestra variedad de masajes, que incluyen opciones relajantes, descontracturantes, faciales y combinados. Vní a renovar tu cuerpo y mente.
                     <br/>
-                    ¡No te pierdas nuestras promociones especiales! 
+                    ¡No te pierdas nuestras promociones especiales!
                 </p>
+                <span class="material-symbols-outlined">
+                    view_day
+                </span>
             </div>
-        </div-->
+        </section>
 
     </main>
     <!-- FOOTER -->
 <%- include('./partials/footer') %>
-<script src="/js/carrusel.js"></script>
+    <!--script src="/js/carrusel.js"></script-->
+    <script src="/js/galery.js"></script>
 </body>
 </html>

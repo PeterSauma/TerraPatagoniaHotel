@@ -1,3 +1,4 @@
+//Animacion carrusel
 window.addEventListener('load', function(){
 
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>queySelectors<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -40,4 +41,4 @@ window.addEventListener('load', function(){
     }
   IconoIzuierdo.addEventListener("click", MoverIzquierda)
 })
-               
+          

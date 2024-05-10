@@ -353,10 +353,10 @@ section.galeria div a {
 }
 
 .full-imgBanner img {
-    width: 100%;
-    max-width: 600px;
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
 }
-
 
 
 .full-imgBanner span {
@@ -440,7 +440,7 @@ h1.h1Mostrador  {
     padding: 2px;
     color: rgb(186, 142, 133);
 }
-precio
+
 .room-price {
     
     padding: 5px;
@@ -645,8 +645,9 @@ h2.encabezado {
 }
 
 .full-img img {
-    width: 100%;
-    max-width: 600px;
+    height: 90%;
+    width: 90%;
+    object-fit: contain;
 }
 
 
@@ -674,7 +675,7 @@ main.spa {
     margin: 10px;
     padding: 10px;
 }
-section.carrusel{
+section.spaBanner{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -682,7 +683,30 @@ section.carrusel{
     justify-content: center;
     align-items: center;
     align-content: center;
+    position: relative;
+}
+section.spaBanner img{
+    width: 100%;
+}
 
+.spaPharagraphDiv{
+    width: 100%;
+    padding: 10px 0px;  
+}
+
+section.carrusel{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
 }
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Carrusel Spa<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -695,36 +719,21 @@ section.carrusel{
     height: 90%;
     width: 90%;
     padding: 0px;
-    
-}
-
-.icono-izquierdo{
-    width: 5%;
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    left: -5%;
-    font-size: 30px;
-    cursor: pointer;
-} 
-.icono-derecho{
-    width: 5%;
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    right: -5%;
-    font-size: 30px;
-    cursor: pointer;
 }
 
 .slider-screen{
     height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .slider{
     display: flex;
     width: 500%; /*debe ser la suma de todas las fotos*/
+    height: 100%;
 }
 
 .slider .img-slider{
@@ -733,6 +742,46 @@ section.carrusel{
 i.btnCarrucelJS{
     
     color: rgba(120, 120, 120, 0.6);
+}
+.icono-izquierdo,.icono-derecho{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 5%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+.icono-izquierdo {
+    left: 0%;
+    transform: rotate(180deg)
+}
+.icono-derecho{
+    right: 0%;
+}
+span.arrowSlider{
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0; 
+    margin: 0;
+    font-size: 40px;
+}
+
+.close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>FOOTER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
