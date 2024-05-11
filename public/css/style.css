@@ -737,6 +737,7 @@ section.carrusel{
 }
 
 .slider .img-slider{
+    object-fit: contain;
    width: 20%; /*debe ser 100 dividido la suma de todas las fotos*/
 }
 i.btnCarrucelJS{
@@ -782,6 +783,13 @@ span.arrowSlider{
     font-size: 50px;
     color: rgb(255, 255, 255);
     cursor: pointer;
+}
+.divOpenCarrusel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    align-items: center;
 }
 .openCarrusel{
     font-size: 50px;
