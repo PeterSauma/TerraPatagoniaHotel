@@ -8,7 +8,7 @@
     <!-- MAIN -->
     <main class="spa">
         <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Full screen Carrusel<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
-        <section class="carrusel" id="fullImgBox1">
+        <section class="carrusel" id="fullCarrusel">
             <!--Carrusel-->
             <div class="contenedor-slider">
                <!--Boton Izquierdo-->
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <!--Boton cerrar-->
-            <span class="close" id="closeImg1">X</span>
+            <span class="closeCarrusel" id="closeCarrusel">X</span>
         </section>
 
         
@@ -48,7 +48,8 @@
                     <br/>
                     ¡No te pierdas nuestras promociones especiales!
                 </p>
-                <span class="material-symbols-outlined">
+                <!--Abrir carrusel-->
+                <span class="openCarrusel material-symbols-outlined" id="openCarrusel">
                     view_day
                 </span>
             </div>
@@ -57,7 +58,7 @@
     </main>
     <!-- FOOTER -->
 <%- include('./partials/footer') %>
-    <!--script src="/js/carrusel.js"></script-->
-    <script src="/js/galery.js"></script>
+    <script src="/js/openAndClose.js"></script>
+    <script src="/js/carrusel.js"></script>
 </body>
 </html>
