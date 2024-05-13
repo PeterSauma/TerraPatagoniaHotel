@@ -228,7 +228,8 @@ video.vidio-galeria {
     top: 0;
     left: 0;
     height: 100%;
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
 }
 
 button.btn-galeria {
@@ -344,12 +345,16 @@ section.galeria div a {
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Banner index<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
+section.fullBanner{
+    width: 100vw;
+    height: 200vh;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    z-index: 100;
+}
 .full-imgBanner {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.9);
-    position: fixed;
     top: 0;
     left: 0;
     display: flex;
@@ -367,13 +372,18 @@ section.galeria div a {
 
 .full-imgBanner span {
     position: absolute;
-    top: 5%;
+    top: 2%;
     right: 5%;
     font-size: 30px;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
+.vidio-banner {
+    height: 95vh;
+    width: 90%;
+    object-fit: contain;
+}
 
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>mostrador piezas<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

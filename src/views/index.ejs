@@ -7,20 +7,25 @@
 <body>
     <!-- HEADER -->
 <%- include('./partials/header') %>
-
+<!--Banner-->
+<section class="fullBanner" id="fullImgBox1Banner">
+    <div class="full-imgBanner">
+        <!--Agregar imagen aquí-->
+        <!--img src="/images/banner/promoMayo24.jpg" alt="1"-->
+        
+        <!--Agregar video aquí-->
+        <video class="vidio-banner" autoplay muted loop >
+            <source src="/video/banner/primeraNevadaMayo.mp4" type="video/mp4">
+        </video>
+        <!--audio autoplay controls >
+            <source src="/video/banner/primeraNevadaMayo.mp3" type="audio/mpeg">
+        </audio-->
+        <span id="closeImg1Banner">X</span> 
+    </div>
+</section>
+    <!--End Banner--> 
 <!-- MAIN -->
 <main>
-    <!--Banner-->
-    <section class="fullBanner">
-
-        <div class="full-imgBanner" id="fullImgBox1Banner">
-            <img src="/images/banner/promoMayo24.jpg" alt="1">
-            <span id="closeImg1Banner">X</span> 
-        </div>
-
-    </section>
-    <!--End Banner--> 
-
     <!--Slider bootstrap-->
     <section class="carrusel_bootstrap">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
