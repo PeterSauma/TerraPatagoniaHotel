@@ -10,8 +10,10 @@
   "author": "Peter Sauma",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.1",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "method-override": "^3.0.0",
     "multer": "^1.4.5-lts.1",
     "normalize.css": "^8.0.1"
   },
@@ -24,6 +26,6 @@
   },
   "homepage": "https://github.com/PeterSauma/TerraPatagoniaHotel#readme",
   "devDependencies": {
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.22"
   }
 }
