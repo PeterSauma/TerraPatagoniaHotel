@@ -1,12 +1,12 @@
-//Animacion carrusel
+//Animacion carrusel Spa
 window.addEventListener('load', function(){
 
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>queySelectors<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
   //variables para cambiar de foto
-  let Slider = document.querySelector(".slider");
-  let IconoDerecho = document.querySelector(".icono-derecho");
-  let IconoIzuierdo = document.querySelector(".icono-izquierdo");
-  let Imagenes = document.querySelectorAll(".img-slider").length;
+  let Slider = document.querySelector(".sliderSpa");
+  let IconoDerecho = document.querySelector(".icono-derechoSpa");
+  let IconoIzuierdo = document.querySelector(".icono-izquierdoSpa");
+  let Imagenes = document.querySelectorAll(".img-sliderSpa").length;
   Contador = 0;
 
   //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Funciones para animar el carrusel<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
