@@ -726,6 +726,59 @@ section.carrusel{
     z-index: 90;
 }
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Carrusel Index<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+.contenedor-slider-index {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 0px 40px;
+}
+
+.slider-screen-index {
+    width: 90%;
+}
+
+.slider-screen-index img {
+    width: 100%;
+}
+
+.icono-izquierdo-index,.icono-derecho-index {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 5%;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+.icono-izquierdo-index {
+    left: 20%;
+    transform: rotate(180deg)
+}
+.icono-derecho-index {
+    right: 20%;
+}
+
+span.arrowSliderIndex {
+    color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0; 
+    margin: 0;
+    font-size: 40px;
+
+}
+
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Carrusel Spa<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -783,7 +836,7 @@ i.btnCarrucelJS{
 .icono-derecho{
     right: 0%;
 }
-span.arrowSlider{
+span.arrowSlider {
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
     display: flex;

@@ -29,7 +29,30 @@
 <!-- MAIN -->
 <main>
     <!--Slider bootstrap-->
-    <section class="carrusel_bootstrap">
+
+    <div class="contenedor-slider-index">
+        <!--Boton Izquierdo-->
+        <div class="slider-izquierdo-index">
+            <div class="icono-izquierdo-index">
+                <span class="arrowSliderIndex material-symbols-outlined" id="arrowLeftIndex">arrow_forward_ios</span>
+            </div>
+         </div>
+
+        <!--Boton Derecho-->
+        <div class="slider-derecho-index">
+            <div class="icono-derecho-index">
+                <span class="arrowSliderIndex material-symbols-outlined" id="arrowRigthIndex">arrow_forward_ios</span>
+            </div>
+        </div>
+    
+        <!--Imagnenes Slider-->
+        <div class="slider-screen-index">
+           <img name="ImagenIndex">
+        </div>
+
+    </div>
+    
+    <!--section class="carrusel_bootstrap">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -92,7 +115,8 @@
             <span class="visually-hidden">Next</span>
             </button>
         </div> 
-    </section>
+    </section-->
+
     <!--End slider--> 
 
     <!--Welcome-->
@@ -176,7 +200,7 @@
 <%- include('./partials/footer') %>
 
 <script src="/js/banner.js"></script>
-
+<script src="/js/carruselIndex.js"></script>
 
 </body>
 </html>
