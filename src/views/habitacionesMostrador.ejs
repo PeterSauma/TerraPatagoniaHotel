@@ -9,44 +9,37 @@
   <!-- MAIN -->
   <main class="mostrador">
 
-    <!--Slider bootstrap-->
-    <section class="carrusel_bootstrap">
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <!--carruselAnimado-->
+    <section class="carrusel">
+
+      <!--Carrusel-->
+      <div class="contenedor-slider">
+        
+        <!--Boton Izquierdo-->
+        <div class="icono-izquierdo" id="icono-izquierdo">
+            <span class="arrowSlider material-symbols-outlined">arrow_forward_ios</span>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="/images/habitaciones/Premium/premium1.jpg" class="d-block w-100" alt="1">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/habitaciones/Ejecutiva/ejecutiva2.jpg" class="d-block w-100" alt="2">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/habitaciones/Standar/standar1.jpg" class="d-block w-100" alt="3">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/desayuno/desayuno2.jpg" class="d-block w-100" alt="4">
-          </div>
-          <div class="carousel-item">
-            <img src="/images/desayuno/desayuno1.jpg" class="d-block w-100" alt="5">
-          </div>
+
+        <!--Boton Derecho-->
+        <div class="icono-derecho" id="icono-derecho">
+            <span class="arrowSlider material-symbols-outlined">arrow_forward_ios</span>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        <!--Imagnenes Slider-->
+        <div class="slider-screen">
+            <div class="sliderHabitacionesMostrador" id="slider">
+                <img decoding="async" class="img-sliderHabitacionesMostrador" id="img-slider" src="/images/habitaciones/Premium/premium1.jpg" alt="">
+                <img decoding="async" class="img-sliderHabitacionesMostrador" id="img-slider" src="/images/habitaciones/Ejecutiva/ejecutiva2.jpg" alt="">
+                <img decoding="async" class="img-sliderHabitacionesMostrador" id="img-slider" src="/images/habitaciones/Standar/standar1.jpg" alt="">
+                <img decoding="async" class="img-sliderHabitacionesMostrador" id="img-slider" src="/images/desayuno/desayuno2.jpg" alt="">
+                <img decoding="async" class="img-sliderHabitacionesMostrador" id="img-slider" src="/images/desayuno/desayuno1.jpg" alt="">
+            </div>
+        </div>
+        
       </div>
     </section>
-    <!--End slider-->
+
+
 
     <!--Card-->
     <section class="section-card-room-mostrador">
@@ -163,6 +156,10 @@
   </main>
   <!-- FOOTER -->
   <%- include('./partials/footer') %>
+
+  
+<script src="/js/carruselAnimado.js"></script>
+
 </body>
 
 </html>

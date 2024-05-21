@@ -586,7 +586,7 @@ h2.encabezado {
 	top: 10px;
 	right: 10px;
 	color: rgb(255, 255, 255);
-	font-size: 15px;
+	font-size: 25px;
 	cursor: pointer;
 }
 .contenido{
@@ -750,7 +750,7 @@ span.arrowSlider {
 Se debe customizar cada carrusel por separado seguún la cantidad de fotos que tenga
 */
 
-/*Index*/
+/*>>>>>>Index<<<<<<*/
 
 .sliderIndex {
     display: flex;
@@ -761,6 +761,58 @@ Se debe customizar cada carrusel por separado seguún la cantidad de fotos que t
 .sliderIndex .img-sliderIndex {
     object-fit: contain;
     width: 8.33333333333333%; /*debe ser 100 dividido la suma de todas las fotos [ 100%/(N° fotos) ] */
+}
+
+/*>>>>>>HabitacionesMostrador<<<<<<*/
+
+.sliderHabitacionesMostrador {
+    display: flex;
+    width: 500%; /*debe ser la suma de todas las fotos multiplicado por 100 [ (N° fotos)x100% ] */
+    height: 100%;
+}
+
+.sliderHabitacionesMostrador .img-sliderHabitacionesMostrador {
+    object-fit: contain;
+    width: 20%; /*debe ser 100 dividido la suma de todas las fotos [ 100%/(N° fotos) ] */
+}
+
+/*>>>>>>Premium<<<<<<*/
+
+.sliderPremium {
+    display: flex;
+    width: 500%; /*debe ser la suma de todas las fotos multiplicado por 100 [ (N° fotos)x100% ] */
+    height: 100%;
+}
+
+.sliderPremium .img-sliderPremium {
+    object-fit: contain;
+    width: 20%; /*debe ser 100 dividido la suma de todas las fotos [ 100%/(N° fotos) ] */
+}
+
+/*>>>>>>Suite<<<<<<*/
+
+.sliderSuite {
+    display: flex;
+    width: 500%; /*debe ser la suma de todas las fotos multiplicado por 100 [ (N° fotos)x100% ] */
+    height: 100%;
+}
+
+.sliderSuite .img-sliderSuite {
+    object-fit: contain;
+    width: 20%; /*debe ser 100 dividido la suma de todas las fotos [ 100%/(N° fotos) ] */
+}
+
+/*>>>>>>Standar<<<<<<*/
+
+.sliderStandar {
+    display: flex;
+    width: 500%; /*debe ser la suma de todas las fotos multiplicado por 100 [ (N° fotos)x100% ] */
+    height: 100%;
+}
+
+.sliderStandar .img-sliderStandar {
+    object-fit: contain;
+    width: 20%; /*debe ser 100 dividido la suma de todas las fotos [ 100%/(N° fotos) ] */
 }
 
 
