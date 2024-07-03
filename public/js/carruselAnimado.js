@@ -9,7 +9,7 @@ window.addEventListener('load', function(){
  
   //variables para cambiar de foto
   Contador = 0;//Contador suma o resta numeros enteros para cambiar el posicionamiento de las fotos
-  let Intervalo = setInterval(MoverDerecha, 2000);//Intervalo es una variable que activa moverDerecha cada 2 segundos
+  let Intervalo = setInterval(MoverDerecha, 5000);//Intervalo es una variable que activa moverDerecha cada 2 segundos
 
 
 
@@ -37,7 +37,7 @@ window.addEventListener('load', function(){
   {
      clearInterval(Intervalo);
      MoverDerecha();
-     Intervalo = setInterval(MoverDerecha, 2000);
+     Intervalo = setInterval(MoverDerecha, 5000);
   });
   //función mover a la derecha. Suma 1 al contador y activa la función mover slider
   function MoverDerecha()
@@ -53,7 +53,7 @@ window.addEventListener('load', function(){
   {
      clearInterval(Intervalo);
      MoverIzquierda();
-     Intervalo = setInterval(MoverDerecha, 2000);
+     Intervalo = setInterval(MoverDerecha, 5000);
   });
   //función mover a la Izquierda. Resta 1 al contador y activa la función mover slider
   function MoverIzquierda()
