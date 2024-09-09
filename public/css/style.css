@@ -1057,7 +1057,10 @@ section.guarda-footer-inferior article.social-media div a img {
     height: 100%;
 }
 
-
+.aFooter{
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
 
 
 
